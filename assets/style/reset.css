@@ -122,3 +122,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  min-width: min-content;
+  padding: 5px 10px;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus {
+  background-color: transparent;
+}
+
+.dropdown-toggle {
+  padding: 0px;
+}
