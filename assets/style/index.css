@@ -115,7 +115,7 @@ p {
 
 .breadcrumbSection ul li:not(:last-child) ::after {
   content: ">";
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .breadcrumbSection ul li:not(:last-child) {
@@ -208,4 +208,118 @@ p {
   height: 100%;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.xidmetLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 54px;
+  background: #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 20px var(--mainFont);
+  color: white;
+  margin-bottom: 18px;
+}
+
+.xidmetTitle {
+  font: 600 20px var(--mainFont);
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.xidmetDesc {
+  font: 400 16px var(--mainFont);
+  color: #4c4c4c;
+}
+
+.bizNecəIşleyirik {
+  margin-bottom: 120px;
+}
+
+.bizNecəIşleyirik ul li {
+  padding-bottom: 20px;
+}
+
+.bizNecəIşleyirik ul div:nth-child(odd) li {
+  padding-left: 20px;
+  border-left: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(odd) {
+  display: flex;
+  justify-content: end;
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li {
+  padding-right: 20px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-right: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li div.xidmetDesc {
+  text-align: end;
+}
+
+.selectedLogo {
+  background-color: var(--mainColor);
+}
+
+.bizNecəIşleyirik ul div:nth-child(2) li {
+  border-color: var(--mainColor);
+}
+
+.bizNecəIşleyirik ul > div:nth-child(1) li {
+  border-radius: 10px 0 0 0;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(6) li {
+  border-radius: 0 0 10px 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--mainColor);
+}
+
+.myCard {
+  background-color: rgba(34, 31, 31, 0.1);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.caruselImage {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 28px;
+}
+.caruselImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.caruselStars {
+  margin-bottom: 16px;
+}
+
+.caruselDesc {
+  font: 400 16px var(--mainFont);
+  color: #989898;
+  margin-bottom: 28px;
+}
+
+.caruselAuthor {
+  font: 600 18px var(--mainFont);
+  color: var(--mainColor);
 }
