@@ -323,3 +323,44 @@ p {
   font: 600 18px var(--mainFont);
   color: var(--mainColor);
 }
+
+.footer {
+  background-color: var(--mainColor);
+  padding: 34px 0;
+}
+
+.footerTitle {
+  margin-bottom: 12px;
+}
+
+.footerTitle p {
+  color: #312402;
+  font: 600 20px var(--mainFont);
+}
+
+.footer ul li a,
+.footer ul li {
+  color: #785801;
+  font: 300 14px var(--mainFont);
+}
+
+.footer ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.hamisinaBax {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footerHr {
+  margin-top: 78px;
+  border: 1px solid #3a2c06;
+}
+
+.copyRight {
+  text-align: center;
+  color: #b38304;
+  font: 400 14px var(--mainFont);
+}
