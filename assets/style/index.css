@@ -364,3 +364,81 @@ p {
   color: #b38304;
   font: 400 14px var(--mainFont);
 }
+
+.missiyamizLeft {
+  background-color: #1d1d1d;
+  border-radius: 0 8px 8px 0;
+  padding: 47px 0px 47px 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.missiyamizLeft > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  width: max-content;
+}
+
+.missiyamizLeft > div:not(:last-child) {
+  border-bottom: 1px solid #343434;
+}
+
+.missiyamizLeft > div p:first-child {
+  color: #ffffff;
+  font: 600 36px var(--mainFont);
+}
+
+.missiyamizLeft > div p:last-child {
+  color: #ffffffb3;
+  font: 500 16px var(--mainFont);
+}
+
+.missiyamiz > .row:first-child {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.haqqimizdaDesc {
+  font: 400 16px var(--mainFont);
+  color: #4c4c4c;
+}
+
+.missiyamizBox {
+  backdrop-filter: blur(4px);
+  border: 1px solid #eaeaea;
+  background: #ffffff4d;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 47px 62px;
+  height: 100%;
+}
+
+.missiyamizBox div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.missiyamizBox > div > div {
+  width: 58px;
+  height: 58px;
+  border-radius: 54px;
+  background-color: #fff6e0;
+}
+
+.missiyamizBox > div > p {
+  color: #111827;
+  font: 500 18px var(--mainFont);
+}
+
+.missiyamizBoxContainer > div:nth-child(-n + 2) {
+  margin-bottom: 20px;
+}
