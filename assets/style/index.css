@@ -155,10 +155,10 @@ p {
   padding: 10px;
 }
 
-.secondSection ul li:first-child a {
+/* .secondSection ul li:first-child a {
   color: var(--mainColor);
   border-bottom: 1px solid var(--mainColor);
-}
+} */
 
 .haqqimizdaContainer > div {
   display: flex;
@@ -365,7 +365,7 @@ p {
   font: 400 14px var(--mainFont);
 }
 
-.missiyamizLeft {
+.missiyamizLeft > div {
   background-color: #1d1d1d;
   border-radius: 0 8px 8px 0;
   padding: 47px 0px 47px 108px;
@@ -374,7 +374,7 @@ p {
   gap: 32px;
 }
 
-.missiyamizLeft > div {
+.missiyamizLeft > div > div {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -382,16 +382,16 @@ p {
   width: max-content;
 }
 
-.missiyamizLeft > div:not(:last-child) {
+.missiyamizLeft > div > div:not(:last-child) {
   border-bottom: 1px solid #343434;
 }
 
-.missiyamizLeft > div p:first-child {
+.missiyamizLeft > div > div p:first-child {
   color: #ffffff;
   font: 600 36px var(--mainFont);
 }
 
-.missiyamizLeft > div p:last-child {
+.missiyamizLeft > div > div p:last-child {
   color: #ffffffb3;
   font: 500 16px var(--mainFont);
 }
@@ -441,4 +441,29 @@ p {
 
 .missiyamizBoxContainer > div:nth-child(-n + 2) {
   margin-bottom: 20px;
+}
+
+.hamburgerMenu {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburgerMenu img {
+  width: 100%;
+  display: none;
+}
+
+.linksButton {
+  width: 100%;
+  height: 40px;
+  display: none;
+}
+
+.linksButton img {
+  width: 40px;
+}
+
+.cardSectionContainer {
+  display: flex;
+  justify-content: end;
 }

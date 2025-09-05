@@ -1,0 +1,119 @@
+@media only screen and (max-width: 1400px) {
+  .haqqimizdaContainerLeft3 {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo166 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbarLinks {
+    display: none;
+  }
+
+  .hamburgerMenu img {
+    display: block;
+  }
+
+  .navbarRight {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .linksButton {
+    display: block;
+  }
+
+  .secondSection ul.links {
+    display: none;
+  }
+
+  .secondSection {
+    margin-bottom: 54px;
+  }
+
+  .missiyamiz > .row:first-child {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .missiyamizLeft > div {
+    border-radius: 8px;
+  }
+
+  .missiyamizBoxContainer {
+    width: auto;
+  }
+
+  .missiyamizLeft > div {
+    padding: 47px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .myCard > div {
+    width: 80%;
+  }
+
+  .missiyamizLeft > div > div p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bizNecəIşleyirik div > ul.row > div {
+    margin-bottom: 40px;
+  }
+
+  .bizNecəIşleyirik {
+    margin-bottom: 80px;
+  }
+
+  footer .container {
+    max-width: 80%;
+  }
+
+  footer .container .row > div:nth-child(-n + 2) {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .homeHeader > div.row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardSectionContainer {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .missiyamizBoxContainer > div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .missiyamizLeft {
+    display: none;
+  }
+
+  .myCard > div {
+    width: 90%;
+  }
+
+  .caruselStars,
+  .caruselDesc,
+  .caruselAuthor {
+    text-align: center;
+  }
+}
