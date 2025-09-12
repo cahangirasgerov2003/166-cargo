@@ -14,25 +14,6 @@ p {
   display: flex;
 }
 
-.ferdiMusteri {
-  border-radius: 8px 0 0 8px;
-  padding: 10px;
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
-  font: 500 14px var(--mainFont);
-  box-shadow: 0px 0px 4px 0px #0000001f;
-}
-
-.korporativMusteri {
-  display: flex;
-  align-items: center;
-  border: 1px solid 0000001f;
-  border-left: none;
-  padding: 10px;
-  border-radius: 0 8px 8px 0;
-  box-shadow: 0px 0px 4px 0px #0000001f;
-}
-
 .cardSection {
   display: flex;
   align-items: center;
@@ -148,17 +129,6 @@ p {
   align-items: center;
   gap: 30px;
 }
-
-.secondSection ul li a {
-  font: 600 16px var(--mainFont);
-  color: #343434;
-  padding: 10px;
-}
-
-/* .secondSection ul li:first-child a {
-  color: var(--mainColor);
-  border-bottom: 1px solid var(--mainColor);
-} */
 
 .haqqimizdaContainer > div {
   display: flex;
@@ -466,4 +436,38 @@ p {
 .cardSectionContainer {
   display: flex;
   justify-content: end;
+}
+
+.headerLeft button:first-child {
+  border-radius: 8px 0 0 8px;
+  padding: 10px;
+  font: 500 14px var(--mainFont);
+  box-shadow: 0px 0px 4px 0px #0000001f;
+}
+
+.headerLeft button:last-child {
+  display: flex;
+  align-items: center;
+  border-left: none;
+  padding: 10px;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0px 0px 4px 0px #0000001f;
+}
+
+.headerLeft button.buttonChange {
+  border: 1px solid var(--mainColor);
+}
+
+.headerLeft button.buttonChange p {
+  color: var(--mainColor);
+}
+
+.secondSection ul li a {
+  font: 600 16px var(--mainFont);
+  color: #343434;
+  padding: 10px;
+}
+
+.secondSection ul.links li.linkClicked a {
+  border-bottom: 1px solid var(--mainColor);
 }
