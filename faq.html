@@ -189,7 +189,7 @@
                     width="18"
                     height="20"
                     viewBox="0 0 18 20"
-                    fill="none"
+                    fill="black"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -202,7 +202,7 @@
               <li><a href="#"> Parent </a></li>
               <li><a href="#"> Child </a></li>
               <li><a href="#"> Sub Option </a></li>
-              <li><a href="#"> The Chosen One </a></li>
+              <li><a href="#" class="chosenOne"> The Chosen One </a></li>
             </ul>
           </section>
 
@@ -214,15 +214,8 @@
               <li><a href="#"> Komandamiz </a></li>
               <li><a href="#">Mediada biz</a></li>
               <li><a href="#">Blog</a></li>
-              <li>
-                <a
-                  href="#"
-                  style="
-                    color: var(--mainColor);
-                    border-bottom: 1px solid var(--mainColor);
-                  "
-                  >Tez-tez verilən suallar</a
-                >
+              <li class="linkClicked">
+                <a href="#">Tez-tez verilən suallar</a>
               </li>
               <li><a href="#"> Qalereya </a></li>
             </ul>
@@ -392,7 +385,7 @@
               <div class="footerTitle">
                 <p>Xidmətlər</p>
               </div>
-              <ul>
+              <ul class="footerLinksFirst">
                 <li><a href="#"> Transport </a></li>
                 <li><a href="#"> Logistika </a></li>
                 <li><a href="#"> Yükdaşima </a></li>
@@ -427,7 +420,7 @@
               <div class="footerTitle">
                 <p>Faydali linklər</p>
               </div>
-              <ul>
+              <ul class="footerLinksSecond">
                 <li><a href="#"> Haqqimizda </a></li>
                 <li><a href="#"> Bizim komanda </a></li>
                 <li><a href="#"> Mediada biz </a></li>
@@ -451,7 +444,7 @@
                 <li>Əlaqə nömrəsi : +994 (50) 253 46 16</li>
                 <li>Elektron poçt : info@166.az</li>
                 <li class="mt-4">
-                  <ul class="d-flex gap-4">
+                  <ul class="d-flex gap-4 socialLinks">
                     <li>
                       <a href="#"
                         ><img src="./assets/image/facebook.png" alt="facebook"

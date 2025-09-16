@@ -95,18 +95,9 @@ p {
 }
 
 .breadcrumbSection ul li:not(:last-child) ::after {
+  color: #242424;
   content: ">";
   margin: 0 10px;
-}
-
-.breadcrumbSection ul li:not(:last-child) {
-  font: 600 12px var(--mainFont);
-  color: #474747;
-}
-
-.breadcrumbSection ul li:last-child {
-  font: 500 12px var(--mainFont);
-  color: #b8b8b8;
 }
 
 .breadcrumbSection ul li a {
@@ -179,20 +170,6 @@ p {
   border-radius: 8px;
   object-fit: cover;
 }
-
-.xidmetLogo {
-  width: 44px;
-  height: 44px;
-  border-radius: 54px;
-  background: #d7d7d7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: 600 20px var(--mainFont);
-  color: white;
-  margin-bottom: 18px;
-}
-
 .xidmetTitle {
   font: 600 20px var(--mainFont);
   color: #111827;
@@ -308,20 +285,11 @@ p {
   font: 600 20px var(--mainFont);
 }
 
-.footer ul li a,
-.footer ul li {
-  color: #785801;
-  font: 300 14px var(--mainFont);
-}
-
-.footer ul li:not(:last-child) {
-  margin-bottom: 12px;
-}
-
 .hamisinaBax {
   display: flex;
   align-items: center;
   gap: 5px;
+  color: black;
 }
 
 .footerHr {
@@ -470,4 +438,156 @@ p {
 
 .secondSection ul.links li.linkClicked a {
   border-bottom: 1px solid var(--mainColor);
+  color: var(--mainColor);
+}
+
+.breadcrumbSection ul li {
+  font: 600 12px var(--mainFont);
+  color: #474747;
+}
+
+.breadcrumbSection ul li a.chosenOne {
+  font: 500 12px var(--mainFont);
+  color: #b8b8b8;
+}
+
+.breadcrumbSection ul li a.chosenOne {
+  color: #b8b8b8;
+}
+
+.breadcrumbSection ul li a svg path {
+  fill: #242424;
+}
+
+.breadcrumbSection ul li a.chosenOne svg path {
+  fill: #b8b8b8;
+}
+
+.footer ul li a,
+.footer ul li {
+  color: #785801;
+  font: 300 14px var(--mainFont);
+  transition: all 0.3s linear;
+}
+
+.footer ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+ul.footerLinksFirst li a:hover,
+ul.footerLinksSecond li a:hover {
+  color: red;
+}
+
+a.hamisinaBax p {
+  color: black;
+  transition: all 0.3s linear;
+}
+
+a.hamisinaBax svg path {
+  color: #312402;
+  transition: all 0.3s linear;
+}
+
+a.hamisinaBax:hover p {
+  color: red !important;
+}
+
+a.hamisinaBax:hover svg path {
+  fill: red;
+}
+
+ul.socialLinks li a img {
+  transition: transform 0.3s ease;
+}
+
+ul.socialLinks li a img:hover {
+  transform: scale(0.8);
+}
+
+.bizNecəIşleyirik ul div:nth-child(odd) li {
+  padding-left: 20px;
+  border-left: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(odd) {
+  display: flex;
+  justify-content: end;
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li {
+  padding-right: 20px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-right: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li div.xidmetDesc {
+  text-align: end;
+}
+
+.selectedLogo {
+  background-color: var(--mainColor);
+}
+
+.bizNecəIşleyirik ul div:nth-child(2) li {
+  border-color: #f2f2f2;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(1) li {
+  border-radius: 10px 0 0 0;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(6) li {
+  border-radius: 0 0 10px 0;
+}
+
+.necəIsleyirikList li {
+  cursor: pointer;
+}
+
+.bizNecəIşleyirik ul div:nth-child(odd) li {
+  padding-left: 20px;
+  border-left: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul > div:nth-child(odd) {
+  display: flex;
+  justify-content: end;
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li {
+  padding-right: 20px;
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-right: 8px solid #f2f2f2;
+}
+
+.bizNecəIşleyirik ul div:nth-child(odd) li.chosed {
+  border-left: 8px solid var(--mainColor);
+}
+
+.bizNecəIşleyirik ul div:nth-child(even) li.chosed {
+  border-right: 8px solid var(--mainColor);
+}
+
+.xidmetLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 54px;
+  background: #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 20px var(--mainFont);
+  color: white;
+  margin-bottom: 18px;
+}
+
+.xidmetLogo.selected {
+  background-color: var(--mainColor);
 }
