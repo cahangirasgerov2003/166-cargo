@@ -83,3 +83,15 @@ document.querySelectorAll(".necəIsleyirikList div li").forEach((selected) => {
     });
   });
 });
+
+document.querySelectorAll(".teamCardContainer div").forEach((selected) => {
+  selected.addEventListener("click", () => {
+    selected.classList.add("selectedTeamCard");
+
+    document.querySelectorAll(".teamCardContainer div").forEach((check) => {
+      if (check !== selected) {
+        check.classList.remove("selectedTeamCard");
+      }
+    });
+  });
+});

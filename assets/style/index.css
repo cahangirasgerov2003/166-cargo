@@ -591,3 +591,39 @@ ul.socialLinks li a img:hover {
 .xidmetLogo.selected {
   background-color: var(--mainColor);
 }
+
+.dropdown-menu li {
+  transition: all 0.3s linear;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgb(190, 150, 39);
+}
+
+.fixedElement {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.headerContainer {
+  background-color: rgba(255, 255, 255, 0.804);
+}
+
+.homeNav {
+  margin-top: 106px;
+}
+
+.haqqimizdaContainerLeft3 {
+  position: relative;
+}
+
+.haqqimizdaContainerLeft3 p {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  color: rgb(0, 255, 162);
+  font: bold 20px var(--mainFont);
+}

@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 20px;
+}
+.card {
+  grid-column: span 2 / span 2;
+}
+
+.ourName {
+  font: 500 20px var(--mainFont);
+}
+
+.teamCard div:last-child p {
+  font: 400 16px var(--mainFont);
+}

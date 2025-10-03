@@ -1,6 +1,0 @@
-
-
-
-                       <div class="faqTitle">
-                        <p>Eros imperdiet rhoncus?</p>
-                      </div>

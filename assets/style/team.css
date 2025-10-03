@@ -1,0 +1,47 @@
+.teamSection {
+  margin-bottom: 50px;
+}
+
+.teamCardImg {
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  background-image: url("../image/team.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  width: 100%;
+  cursor: pointer;
+}
+
+.teamCardContainer .teamCard:nth-child(3n + 3) .teamCardImg {
+  background-position: center left;
+}
+
+.teamCardContainer .teamCard:nth-child(3n + 2) .teamCardImg {
+  background-repeat: repeat-x;
+  background-size: 60%;
+}
+
+.teamCardImg img {
+  width: 100%;
+}
+
+.teamCardContainer {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 40px 20px;
+}
+
+.teamCardContainer .teamCard {
+  grid-column: span 4;
+}
+
+.teamCardAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.selectedTeamCard .teamCardImg {
+  background-image: url("../image/team2.svg");
+}
