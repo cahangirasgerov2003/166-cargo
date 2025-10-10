@@ -1,4 +1,4 @@
-.grid-container {
+/* .grid-container {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 20px;
@@ -13,4 +13,18 @@
 
 .teamCard div:last-child p {
   font: 400 16px var(--mainFont);
+} */
+
+.textContainer {
+  width: 200px;
+  height: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.textContainer:hover {
+  width: 200px;
+  height: 200px;
+  white-space: wrap;
 }

@@ -627,3 +627,25 @@ ul.socialLinks li a img:hover {
   color: rgb(0, 255, 162);
   font: bold 20px var(--mainFont);
 }
+
+/* .logo166 a img {
+  transition: transform 10s linear;
+}
+
+.logo166 a img:hover {
+  transform: translateX(100px);
+} */
+
+@keyframes logoTranslate {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.logo166 a img {
+  animation: logoTranslate 3s linear 0.5s infinite alternate backwards;
+}

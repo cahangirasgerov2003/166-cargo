@@ -12,13 +12,16 @@
   cursor: pointer;
 }
 
+.teamCardContainer .teamCard .teamCardImg {
+  background-size: 50%;
+}
+
 .teamCardContainer .teamCard:nth-child(3n + 3) .teamCardImg {
   background-position: center left;
 }
 
 .teamCardContainer .teamCard:nth-child(3n + 2) .teamCardImg {
   background-repeat: repeat-x;
-  background-size: 60%;
 }
 
 .teamCardImg img {
