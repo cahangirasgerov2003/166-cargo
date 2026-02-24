@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(80, 78, 78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.postsContainer > header > div > p {
+  color: rgb(180, 13, 13);
+  font: bold 30px sans-serif;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.result {
+  margin-top: 50px;
+}
+
+.aboutPost > div {
+  height: 280px;
+  margin-bottom: 50px;
+}

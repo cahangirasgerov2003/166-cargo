@@ -1,0 +1,2 @@
+0bdeaf2d37b117dddb4ddc3831d416cd
+https://api.openweathermap.org/data/2.5/weather?q=Baku&appid=SENIN_API_KEY&units=metric
