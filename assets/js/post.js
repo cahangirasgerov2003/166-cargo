@@ -1,7 +1,6 @@
 let showButton = document.querySelector(".showButton");
 let result = document.querySelector(".result");
-let api = "https://jsonplaceholder.typicodea.com/posts";
-let slicedData = [];
+let api = "https://jsonplaceholder.typicode.com/posts";
 
 async function getPosts() {
   try {
