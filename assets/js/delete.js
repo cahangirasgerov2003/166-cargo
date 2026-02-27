@@ -4,9 +4,8 @@ let api = "https://jsonplaceholder.typicode.com/posts";
 let filterButton = document.querySelector(".filterButton");
 let addButton = document.querySelector(".addButton");
 let editButton = document.querySelector(".editButton");
-let deleteButton = document.querySelector(".deleteButton");
-let getBookByUserId = document.querySelector(".getBookByUserId");
-let idSection = document.querySelector("#idSection");
+let deletePost = document.querySelector(".deletePost");
+let deletePostById = document.querySelector("#deletePostById");
 let slicedData = [];
 
 async function getPosts() {
@@ -56,10 +55,10 @@ async function getPosts() {
   }
 }
 
-async function getPostsById() {
+async function deletePostByIdFunc() {
   try {
-    let response = await fetch(`${api}?author=${idSection.value}`, {
-      method: "GET",
+    let response = await fetch(`${api}/${deletePostById.value}`, {
+      method: "DELETE",
     });
 
     if (!response.ok) {
@@ -73,29 +72,13 @@ async function getPostsById() {
 
     console.log(data);
 
-    if (data.length > 5) {
-      slicedData = data.slice(0, 5);
-    } else {
-      slicedData = data;
-    }
+    result.innerHTML = `
+    
+    <div>
+       <p class="text-center text-info">Post başarı ilə silindi !</p>
+    </div>
 
-    console.log(slicedData);
-    result.innerHTML = "";
-    slicedData.forEach((item) => {
-      let div = document.createElement("div");
-      div.className = "col-sm-3 aboutPost";
-      div.innerHTML = `
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-               <h5 class="card-title postCardTitle">${item.title.length > 20 ? item.title.slice(0, 17) + "..." : item.title}</h5>
-               <p class="card-text">${item.body.length > 200 ? item.body.slice(0, 197) + "..." : item.body}</p>
-               <a href="/blog.html" class="card-link">See more</a>
-            </div>
-        </div> 
-      `;
-
-      result.appendChild(div);
-    });
+    `;
   } catch (err) {
     console.error(err);
     let p = document.createElement("p");
@@ -105,7 +88,7 @@ async function getPostsById() {
     p.innerHTML = err;
     result.appendChild(p);
   } finally {
-    idSection.value = "";
+    deletePostById.value = "";
   }
 }
 
@@ -113,14 +96,10 @@ showButton.addEventListener("click", () => {
   getPosts();
 });
 
+deletePost.addEventListener("click", () => {
+  deletePostByIdFunc();
+});
+
 filterButton.addEventListener("click", () => {
   window.location.href = "http://127.0.0.1:5501/filter.html";
-});
-
-deleteButton.addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5501/delete.html";
-});
-
-getBookByUserId.addEventListener("click", () => {
-  getPostsById();
 });

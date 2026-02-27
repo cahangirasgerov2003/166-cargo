@@ -58,27 +58,3 @@ body {
   margin-right: 10px;
   color: red;
 }
-
-.deleteSection {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.deleteSection > div {
-  display: flex;
-  align-items: center;
-}
-
-.deleteSection > div > label {
-  margin-right: 10px;
-  color: red;
-}
-
-.deleteSection > div > input {
-  margin-right: 10px;
-  border-radius: 10px;
-  padding: 10px 10px;
-  border: none;
-  outline: none;
-}
