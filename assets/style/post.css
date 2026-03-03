@@ -82,3 +82,60 @@ body {
   border: none;
   outline: none;
 }
+
+/* ------------------------------------------- Add new post ---------------------------------------------------------- */
+.addNewPostForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.addNewPostForm > div {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.addNewPostForm > div > label {
+  width: 100%;
+  color: rgb(237, 138, 8);
+  font: bold 18px sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.addNewPostForm > div > input {
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(220, 171, 108);
+  color: white;
+  font:
+    bold 15px "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+.addNewPost {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: rgb(191, 38, 208);
+  color: white;
+  font: bold 18px sans-serif;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.addNewPost:hover {
+  background-color: rgb(156, 223, 31);
+  color: rgb(24, 6, 6);
+}
