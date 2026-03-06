@@ -1,0 +1,161 @@
+body {
+  background-color: rgb(80, 78, 78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.postsContainer > header > div > p {
+  color: rgb(180, 13, 13);
+  font: bold 30px sans-serif;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.result {
+  margin-top: 50px;
+}
+
+.aboutPost > div {
+  height: 280px;
+  margin-bottom: 50px;
+}
+
+/* .postCardTitle {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.postCardTitle:hover {
+  overflow: visible;
+  white-space: initial;
+} */
+
+.filterSection {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filterSection > label {
+  margin-right: 10px;
+  color: red;
+}
+
+.deleteSection {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.deleteSection > div {
+  display: flex;
+  align-items: center;
+}
+
+.deleteSection > div > label {
+  margin-right: 10px;
+  color: red;
+}
+
+.deleteSection > div > input {
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+}
+
+/* ------------------------------------------- Add new post ---------------------------------------------------------- */
+.addNewPostForm,
+.updatePost {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.addNewPostForm > div,
+.updatePost > div {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.addNewPostForm > div > label,
+.updatePost > div > label {
+  width: 100%;
+  color: rgb(237, 138, 8);
+  font: bold 18px sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.addNewPostForm > div > input,
+.updatePost > div > input {
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(220, 171, 108);
+  color: white;
+  font:
+    bold 15px "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+.addNewPost,
+.editPost {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: rgb(191, 38, 208);
+  color: white;
+  font: bold 18px sans-serif;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.addNewPost:hover {
+  background-color: rgb(156, 223, 31);
+  color: rgb(24, 6, 6);
+}
+
+.editPost {
+  background-color: rgb(67, 88, 10);
+}
+
+.editPost:hover {
+  background-color: rgb(111, 89, 23);
+  color: rgb(24, 6, 6);
+}
+
+.updatePost > div > small {
+  color: rgb(112, 26, 26);
+  font-weight: bold;
+  padding-left: 10px;
+}

@@ -1,3 +1,4 @@
-let data = [1, 2, 4, 5];
+let arr = ["A", "s", "i", "m"];
 
-data.slice();
+let str = arr.join("");
+console.log(str);
